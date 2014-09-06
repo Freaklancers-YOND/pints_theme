@@ -1,4 +1,14 @@
 <header class="banner navbar navbar-default navbar-static-top" role="banner">
+	<h3 class="toggle"><img src="toggle.png" class ="toggler expanded" alt="Expand"/> </h3>
+
+<div id="TableData" class="hidden-first">
+      <?php
+        if (has_nav_menu('secondary')) :
+          wp_nav_menu(array('theme_location' => 'secondary', 'menu_class' => 'nav navbar-nav-sec'));
+        endif;
+      ?>
+    
+</div>
   <div class="container">
 	<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
 
@@ -10,15 +20,8 @@
       ?>
     </nav>
   </div>
-  <div class="search-toggle">
-				<a href="#search-container" class="screen-reader-text">asdfghjk</a>
-			</div>
+ 
 
 		</div>
-
-		<div id="search-container" class="search-box-wrapper hide">
-			<div class="search-box">
-				<?php get_search_form(); ?>
-			</div>
-		</div>
+	
 </header>

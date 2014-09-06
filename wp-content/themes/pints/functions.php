@@ -32,3 +32,9 @@ foreach ($roots_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+/* Adding one more secondary menu */
+
+register_nav_menus( array(
+    'secondary' => __( 'Secondary Menu', 'pints' ),
+ ) );
