@@ -38,3 +38,9 @@ unset($file, $filepath);
 register_nav_menus( array(
     'secondary' => __( 'Secondary Menu', 'pints' ),
  ) );
+ 
+ /*==========================================================================
+	Content Types
+  ========================================================================== */
+
+	require_once locate_template('/lib/custom-posts/articles.php');        // Hubs for map
