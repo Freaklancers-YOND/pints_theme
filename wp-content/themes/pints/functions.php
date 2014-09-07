@@ -33,11 +33,6 @@ foreach ($roots_includes as $file) {
 }
 unset($file, $filepath);
 
-/* Adding one more secondary menu */
-
-register_nav_menus( array(
-    'secondary' => __( 'Secondary Menu', 'pints' ),
- ) );
  
  /*==========================================================================
 	Content Types
